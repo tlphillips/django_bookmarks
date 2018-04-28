@@ -3,7 +3,7 @@ from .models import Album
 
 
 def index(request):
-    all_albums = Album.objests.all()
+    all_albums = Album.objects.all()
     html = ''
     return HttpResponse(html)
     for album in all_albums:
