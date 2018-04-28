@@ -1,6 +1,5 @@
 from django.http import HttpResponse
-import .models import Album
-
+from .models import Album
 
 def index(request):
     all_albums = Album.objects.all()
