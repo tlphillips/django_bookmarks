@@ -1,9 +1,9 @@
 from django.http import HttpResponse
-from models import Album
+import models
 
 
-def index(request):
-    all_albums = Album.objects.all()
+def index(request, album_id=None):
+    all_albums = models.Album.objects.all()
     html = ''
 
     for album in all_albums:
