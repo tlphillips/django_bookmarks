@@ -1,13 +1,13 @@
 from django.http import HttpResponse
-import models
+import .models import Album
 
 
 def index(request):
-    all_albums = models.Album.objects.all()
+    all_albums = Album.objects.all()
     html = ''
 
     for album in all_albums:
-        url = '/music/' + str(album_id) + '/'
+        url = '/music/' + str(album.id) + '/'
         html += '<a href"' + url + '">' + album.album_title + '</a><br>'
     return HttpResponse(html)
 
