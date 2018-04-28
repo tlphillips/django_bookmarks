@@ -2,7 +2,7 @@ from django.http import HttpResponse
 import models
 
 
-def index(request, album_id=None):
+def index(request):
     all_albums = models.Album.objects.all()
     html = ''
 
