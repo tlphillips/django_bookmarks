@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from .models import Album
 from django.template import loader
+import django
 
 
 def index(request):
