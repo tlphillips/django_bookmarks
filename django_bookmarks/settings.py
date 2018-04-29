@@ -76,7 +76,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-TEMPLATES = []
+TEMPLATES = [
     {
         ...
         'DIRS': [os.path.join(BASE_DIR, 'templates'],
