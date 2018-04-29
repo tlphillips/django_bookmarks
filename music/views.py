@@ -9,7 +9,7 @@ def index(request):
     context = {
         'all_albums': all_albums,
     }
-    return HttpResponse(template.render(context,request))
+    return HttpResponse(template.render(request, context))
 
 
 def detail(requst, album_id):
