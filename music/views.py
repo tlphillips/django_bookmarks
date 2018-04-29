@@ -5,7 +5,6 @@ from django.template import loader
 
 def index(request):
     all_albums = Album.objects.all()
-    template = loader.get_template('index.html')
     context = {
         'all_albums': all_albums,
     }
