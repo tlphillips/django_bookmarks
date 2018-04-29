@@ -24,6 +24,14 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATES = [
+    {
+        ...
+        'DIRS': [os.path.join(BASE_DIR, 'templates'],
+        ...
+    },
+]﻿
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -76,13 +84,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-TEMPLATES = [
-    {
-        ...
-        'DIRS': [os.path.join(BASE_DIR, 'templates'],
-        ...
-    },
-]﻿
+
 
 
 # Static files (CSS, JavaScript, Images)
