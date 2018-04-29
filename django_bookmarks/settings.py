@@ -24,13 +24,6 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-TEMPLATES = [
-    {
-        ...
-        'DIRS': [os.path.join(BASE_DIR, 'templates'],
-        ...
-    },
-]﻿
 
 ALLOWED_HOSTS = ['*']
 
